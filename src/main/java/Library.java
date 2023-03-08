@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.List;
 public class Library {
     /*
     * The library should have a list of books.
@@ -5,15 +7,24 @@ public class Library {
     -> (for example: harry potter -> 4 means there are currently 4 harry potter books)
     * The library should have a list of users and a list of librarians.
      */
-
-    //book related functions
-
-    public void addBook(){
-        //TODO
+    private List<Book>  bookCollection;
+    private List<User>  userCollection;
+    private List<Librarian> librarianCollection;
+    public Library(){
+        List<Book> bookCollection = new ArrayList<Book>();
+        List<User> userCollection = new ArrayList<User>();
+        List<Librarian> librarianCollection = new ArrayList<Librarian>();
     }
 
-    public void removeBook(){
-        //TODO
+    // These functions were split into user and librarian functions and are coded in the user and librarian class
+
+
+    public void addBook(Book book){
+        bookCollection.add(book);
+    }
+
+    public void removeBook(Book book){
+        bookCollection.remove(book);
     }
 
     public void searchBook(){
@@ -38,12 +49,12 @@ public class Library {
 
     //user related functions
 
-    public void addUser(){
-        //TODO
+    public void addUser(User user){
+        userCollection.add(user);
     }
 
-    public void removeUser(){
-        //TODO
+    public void removeUser(User user){
+        userCollection.remove(user);
     }
 
     public void searchUser(){
@@ -60,12 +71,12 @@ public class Library {
 
     //librarian related functions
 
-    public void addLibrarian(){
-        //TODO
+    public void addLibrarian(Librarian librarian){
+        librarianCollection.add(librarian);
     }
 
-    public void removeLibrarian(){
-        //TODO
+    public void removeLibrarian(Librarian librarian){
+        librarianCollection.remove(librarian);
     }
 
     public void searchLibrarian(){
