@@ -1,0 +1,46 @@
+The main purpose of this assignment was to completely understand the classes and their relations with each other.
+there are 5 main classes in this code and they are used to launch the menus, the functions, the methods, ...
+In the book class we mainly focus on the attributes of the books and the getter and setter.
+In the librarian class we focus on the getter and setters related to the librarian.
+In the library class we code most of the important functions which are book, user, librarian related and we use them
+all throughout the project.
+In the main class we code all the menus which are the main menu, the user manu and the librarian menu and in the User
+class we code the getter and setters related to the user and two functions for the user which are borrow and return
+the book.
+the most challenging part of the project was handling the relations of the classes and not using the functions in a
+wrong way.
+Most of the bugs encountered were because of the usage of functions that are in other classes and how to use those functions
+in another class correctly.
+This project was a great assignment to learn and study the classes and use them in even bigger projects.
+
+The UML:
+
+      Book class           Librarian class         Library class                  User class
+        name                 username              setBooksNumber()               username
+        author               password                addBook()                    password
+      yearOfPublish        getter and setters        removeBook()                 getter and setters
+        ISBN                                         searchBook()
+      getters and setters                            doesBookExist()
+                                                     increaseBook()
+                                                     decreaseBook()
+                                                     addUser()
+                                                     removeUser()
+                                                     searchUser()
+                                                     doesUserExist()
+                                                     addLibrarian()
+                                                     removeLibrarian()
+                                                     searchLibrarian()
+                                                     doesLibrarianExist()
+
+
+                                               Main class
+                                               Menu
+                                               runMenu()
+                                               loginAsUser()
+                                               userMenu()
+                                               loginAsLibrarian()
+                                               librarianMenu()
+
+
+
+
