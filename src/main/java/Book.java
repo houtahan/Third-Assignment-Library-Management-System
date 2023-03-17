@@ -4,20 +4,13 @@ public class Book {
     private String author;
     private int yearOfPublish;
     private String ISBN;
-    private String status;
-    public Book(){
-    }
+
     public Book(String name, String author, int yearOfPublish, String ISBN){
         this.name = name;
         this.author = author;
         this.yearOfPublish = yearOfPublish;
         this.ISBN = ISBN;
-        this.status = status;
     }
-
-    public Book(String bookid, String author, String title, String year, String available) {
-    }
-
 
     public String getName(){
         return name;
@@ -46,13 +39,6 @@ public class Book {
 
     public void setISBN(String ISBN) {
         this.ISBN = ISBN;
-    }
-
-    public String getStatus(){
-        return status;
-    }
-    public void setStatus(String status) {
-        this.status = status;
     }
 
     @Override
